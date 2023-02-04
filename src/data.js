@@ -1,3 +1,25 @@
+import pensiuneaAronAproape from "./images/pensiunea-aron-aproape.png";
+import pensiuneaAronBalcon from "./images/pensiunea-aron-balcon.png";
+import pensiuneaAronCaine from "./images/pensiunea-aron-caine.png";
+import pensiuneaAronCamera2 from "./images/pensiunea-aron-camera-2.png";
+import pensiuneaAronCamera3 from "./images/pensiunea-aron-camera-3.png";
+import pensiuneaAronCamera4 from "./images/pensiunea-aron-camera-4.png";
+import pensiuneaAronCameraCanapea from "./images/pensiunea-aron-camera-canapea.png";
+import pensiuneaAronCapiteFan from "./images/pensiunea-aron-capite-fan.png";
+import pensiuneaAronExterior2 from "./images/pensiunea-aron-exterior2.png";
+import pensiuneaAronFata from "./images/pensiunea-aron-fata.png";
+import pensiuneaAronFoisorInterior from "./images/pensiunea-aron-foisor-interior.png";
+import pensiuneaAronFoisor from "./images/pensiunea-aron-foisor.png";
+import pensiuneaAronInteriorSala2 from "./images/pensiunea-aron-interior-sala-2.png";
+import pensiuneaAronInteriorSala from "./images/pensiunea-aron-interior-sala.png";
+import pensiuneaAronPrivelisteBalcon from "./images/pensiunea-aron-priveliste-balcon.png";
+import pensiuneaAronPrivelisteAnsamblu from "./images/pensiunea-aron-privire-ansamblu.png";
+import pensiuneaAronSalaMese2 from "./images/pensiunea-aron-sala-mese-2.png";
+import pensiuneaAronSalaMese3 from "./images/pensiunea-aron-sala-mese-3.png";
+import pensiuneaAronSalaMese4 from "./images/pensiunea-aron-sala-mese-4.png";
+import pensiuneaAronSalaMese5 from "./images/pensiunea-aron-sala-mese-5.png";
+import pensiuneaAronSalaMese from "./images/pensiunea-aron-sala-mese.png";
+
 export const navigation = [
   {
     id: 1,
@@ -29,90 +51,86 @@ export const navigation = [
 export const images = [
   {
     id: 1,
-    url: "./images/pensiunea-aron-aproape.png",
+    url: pensiuneaAronAproape,
   },
   {
     id: 2,
-    url: "./images/pensiunea-aron-balcon.png",
+    url: pensiuneaAronBalcon,
   },
   {
     id: 3,
-    url: "./images/pensiunea-aron-caine.png",
+    url: pensiuneaAronCaine,
   },
   {
     id: 4,
-    url: "./images/pensiunea-aron-camera-2.png",
+    url: pensiuneaAronCamera2,
   },
   {
     id: 5,
-    url: "./images/pensiunea-aron-camera-3.png",
+    url: pensiuneaAronCamera3,
   },
   {
     id: 6,
-    url: "./images/pensiunea-aron-camera-4.png",
+    url: pensiuneaAronCamera4,
   },
   {
     id: 7,
-    url: "./images/pensiunea-aron-camera-canapea.png",
+    url: pensiuneaAronCameraCanapea,
   },
   {
     id: 8,
-    url: "./images/pensiunea-aron-capite-fan.png",
+    url: pensiuneaAronCapiteFan,
   },
   {
     id: 9,
-    url: "./images/pensiunea-aron-exterior.png",
+    url: pensiuneaAronExterior2,
   },
   {
     id: 10,
-    url: "./images/pensiunea-aron-exterior2.png",
+    url: pensiuneaAronFata,
   },
   {
     id: 11,
-    url: "./images/pensiunea-aron-fata.png",
+    url: pensiuneaAronFoisorInterior,
   },
   {
     id: 12,
-    url: "./images/pensiunea-aron-foisor-interior.png",
+    url: pensiuneaAronFoisor,
   },
   {
     id: 13,
-    url: "./images/pensiunea-aron-foisor.png",
+    url: pensiuneaAronInteriorSala2,
   },
   {
     id: 14,
-    url: "./images/pensiunea-aron-interior-sala-2.png",
+    url: pensiuneaAronInteriorSala,
   },
   {
     id: 15,
-    url: "./images/pensiunea-aron-interior-sala.png",
+    url: pensiuneaAronPrivelisteBalcon,
   },
   {
     id: 16,
-    url: "./images/pensiunea-aron-priveliste-balcon.png",
+    url: pensiuneaAronPrivelisteAnsamblu,
   },
   {
     id: 17,
-    url: "./images/pensiunea-aron-privire-ansamblu.png",
+    url: pensiuneaAronSalaMese2,
   },
   {
     id: 18,
-    url: "./images/pensiunea-aron-sala-mese-2.png",
+    url: pensiuneaAronSalaMese3,
   },
   {
     id: 19,
-    url: "./images/pensiunea-aron-sala-mese-3.png",
+    url: pensiuneaAronSalaMese4,
   },
   {
     id: 20,
-    url: "./images/pensiunea-aron-sala-mese-4.png",
+    url: pensiuneaAronSalaMese5,
   },
   {
     id: 21,
-    url: "./images/pensiunea-aron-sala-mese-5.png",
-  },
-  {
-    id: 22,
-    url: "./images/pensiunea-aron-sala-mese.png",
+    url: pensiuneaAronSalaMese,
   },
 ];

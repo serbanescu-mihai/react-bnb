@@ -1,4 +1,5 @@
 import React from "react";
+import pensiuneaAronSemnStrada from "../images/pensiunea-aron-semn-strada.jpg";
 
 const Despre = () => {
   return (
@@ -39,7 +40,7 @@ const Despre = () => {
           <p>Pentru mai multe detalii asteptam sa ne contactati!</p>
         </article>
         <article>
-          <img src="./images/pensiunea-aron-semn-strada.jpg" alt="" />
+          <img src={pensiuneaAronSemnStrada} alt="Pensiunea Aron Semn Strada" />
         </article>
       </section>
     </section>

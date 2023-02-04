@@ -1,4 +1,7 @@
 import React from "react";
+import pensiuneaAronAproape from "../images/pensiunea-aron-aproape.png";
+import pensiuneaAronBalcon from "../images/pensiunea-aron-balcon.png";
+import pensiuneaAronFoisor from "../images/pensiunea-aron-foisor.png";
 
 const Facilitati = () => {
   return (
@@ -46,9 +49,9 @@ const Facilitati = () => {
         </article>
       </section>
       <section className="images-container">
-        <img src="./images/pensiunea-aron-aproape.png" alt="" />
-        <img src="./images/pensiunea-aron-balcon.png" alt="" />
-        <img src="./images/pensiunea-aron-foisor.png" alt="" />
+        <img src={pensiuneaAronAproape} alt="Pensiunea Aron Aproape" />
+        <img src={pensiuneaAronBalcon} alt="Pensiunea Aron Balcon" />
+        <img src={pensiuneaAronFoisor} alt="Pensiunea Aron Foisor" />
       </section>
     </section>
   );
