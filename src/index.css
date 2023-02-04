@@ -1,13 +1,334 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 2000px;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+.section-wrapper header {
+  text-align: center;
+  padding: 5rem 0;
+}
+.section-wrapper header h2 {
+  padding-bottom: 1rem;
+  color: goldenrod;
+}
+.section-wrapper header p {
+  color: goldenrod;
+  padding-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+.section-wrapper .section-container {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-wrapper .section-container article {
+  flex: 1;
+}
+.section-wrapper .section-container article h3 {
+  padding-bottom: 2rem;
+}
+.section-wrapper .section-container article p {
+  padding-bottom: 1rem;
+}
+
+.website-header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 4rem;
+  z-index: 1;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+.website-header .logo {
+  height: 3rem;
+  margin: 0 auto;
+}
+.website-header .logo img {
+  height: 4rem;
+  width: auto;
+  margin: auto;
+}
+
+.navigation {
+  height: 0;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.navigation-links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+}
+.navigation-links .navigation-link {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.navigation-links a {
+  color: goldenrod;
+}
+
+.toggle-button {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  color: white;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  position: fixed;
+  top: 0.6rem;
+  right: 0.6rem;
+}
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(../public/images/pensiunea-aron.png) center/cover no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+.home h2 {
+  color: goldenrod;
+  font-family: cursive;
+}
+.home a {
+  width: 10rem;
+  margin: 3rem auto;
+  padding: 1rem 1.5rem;
+  border: 3px solid white;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.home a:hover {
+  border: 3px solid goldenrod;
+  background: goldenrod;
+}
+
+.despre .section-container {
+  flex-direction: column-reverse;
+}
+
+.facilitati,
+.galerie,
+.contact {
+  background-color: rgb(236, 236, 236);
+}
+
+.facilitati .section-container {
+  justify-content: center;
+  gap: 3rem;
+}
+.facilitati .section-container article {
+  flex: none;
+  max-width: 20rem;
+}
+.facilitati .images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+.facilitati .images-container img {
+  max-width: 30rem;
+  background: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+
+.filmare-drona .section-container,
+.tur-virtual .section-container,
+.contact .section-container {
+  height: 80vh;
+}
+.filmare-drona .section-container iframe,
+.tur-virtual .section-container iframe,
+.contact .section-container iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.galerie .section-container {
+  flex-direction: column;
+}
+.galerie .section-container .button-container {
+  text-align: center;
+}
+.galerie .section-container .button-container .slider-button {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.galerie .section-container .image-carousel {
+  max-width: 50rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.galerie .section-container .image-carousel .slide {
+  position: absolute;
+  opacity: 0;
+}
+.galerie .section-container .image-carousel .slide[data-active] {
+  opacity: 1;
+}
+
+.contact a {
+  display: block;
+  border: solid 1px goldenrod;
+  width: 10rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 10rem;
+  color: goldenrod;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .toggle-button {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  .section-wrapper .section-container {
+    flex-direction: row;
+  }
+  .section-wrapper .section-container img {
+    max-height: 30rem;
+    background: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+  .website-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: goldenrod;
+  }
+  .website-header * {
+    flex: none;
+    gap: 1rem;
+  }
+  .website-header .logo {
+    margin: 0;
+  }
+  .website-header .logo a {
+    padding: 0;
+  }
+  .website-header .logo img {
+    width: 20rem;
+  }
+  .website-header nav ul li a {
+    color: goldenrod;
+    font-size: 1.25rem;
+  }
+  .website-header .navigation {
+    margin: auto 0px;
+    padding-right: 1rem;
+    visibility: visible;
+    height: auto;
+  }
+  .website-header .navigation-links {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    background-color: transparent;
+    height: auto;
+  }
+  .website-header .navigation-links .navigation-link {
+    padding: 0;
+  }
+  .website-header .navigation-links a {
+    color: goldenrod;
+  }
+  .galerie .section-container {
+    flex-direction: column;
+  }
+}
+.hidden {
+  height: 100vh;
 }
