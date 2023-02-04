@@ -42,7 +42,6 @@ const GalerieFoto = () => {
         <article className="image-carousel">
           <div data-slides>
             {images.map((image) => {
-              console.log(image.url);
               if (count === image.id) {
                 return (
                   <img
@@ -51,9 +50,11 @@ const GalerieFoto = () => {
                     src={image.url}
                     className="slide"
                     data-id={image.id}
+                    alt=""
                   />
                 );
               }
+              return null;
             })}
           </div>
         </article>
